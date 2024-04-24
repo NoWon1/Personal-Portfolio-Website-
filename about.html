@@ -1,0 +1,93 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>About</title>
+    <link rel="stylesheet" href="style.css">
+    <style>
+        h1{
+            font-family: 'Courier New', Courier, monospace;
+            color: #9B3922;
+
+        }
+        p{
+            font-family: 'Courier New', Courier, monospace;
+            color: aliceblue;
+        }
+    </style>
+</head>
+<body>
+    <nav>
+        <img src="Images/logo.jpg" alt="Logo" class="logo">
+        <ul>
+            <li><a href="index.html">Home</a></li>
+            <li><a href="about.html">About</a></li>
+            <li><a href="skills.html">Skills</a></li>
+            <li><a href="portfolio.html">Portfolio</a></li>
+            <li><a href="contact.html">Contact</a></li>
+        </ul>
+    </nav>
+
+    <div id="about">
+        <div class="container">
+            <div class="row">
+                <div class="about-col-1">
+                    <img src="Images/grad.jpg">
+                </div>
+                <div class="about-col-2">
+                    <h1>About Me</h1>
+                    <p> Hello! I'm Aditya Mukherjee, a student based in Delhi, studying for a BTech CSE degree from VIT with specialisation in Bioinformatics.</p>
+                    <br>
+                    <p> Over the course of my learning, I've developed a diverse skill set in various domains. I am part of technical as well as non technical clubs. I'm also certified in public speaking :)</p>
+                    <br>
+                    <p>
+                        Connect with me on LinkedIn: <a href="https://www.linkedin.com/in/adi-tya-mukherjee/" target="_blank">My LinkedIn Profile</a>
+                    </p>
+                    <br><br>
+                    <div class="tab-titles">
+                        <p class="tab-links active-link" onclick="opentab('experience')"><b>Experience</b></p>
+                    </div>
+                    <div class="tab-contents active-tab" id="experience">
+                        Part of CodeChef and Alpha Bio Cell. Been to various technical and non technical events. <br>Was part of the <strong>Oraganizing committee of DEVSOC'23</strong> South-East Asia's largest student run hackathon.</div>
+
+                    <div class="tab-titles">
+                        <p class="tab-links active-link" onclick="opentab('testimonials')"><b>Testimonials</b></p>
+                    </div>
+                    <div class="tab-contents active-tab" id="testimonials">
+                        <h2>John Doe</h2>
+                        <p>
+                            "Working with this team has been an absolute pleasure. Their technical expertise and problem-solving skills are unmatched. They delivered our project on time and exceeded our expectations. I highly recommend them for any tech-related project."
+                        </p>
+                        <p>
+                            <strong>Achievement Highlight:</strong> Successfully implemented a complex algorithm for real-time data processing, resulting in a 30% improvement in system performance.
+                        </p>
+                        <br>
+                        <h2>Jane Smith</h2>
+                        <p>
+                            "I've had the opportunity to lead a team with exceptional managerial skills. Their ability to streamline processes and foster a collaborative environment greatly contributed to the success of our project. Their dedication and leadership are commendable."
+                        </p>
+                        <p>
+                            <strong>Achievement Highlight:</strong> Implemented agile methodologies resulting in a 20% reduction in project delivery time and a 15% increase in team productivity.
+                        </p>
+                        <br> 
+                        <h2>Alexander Johnson</h2>
+                        <p>
+                            "The design team I collaborated with demonstrated exceptional creativity and attention to detail. They transformed our vision into a stunning user interface that received rave reviews from our clients. Their designs not only look great but also enhance the user experience."
+                        </p>
+                        <p>
+                            <strong>Achievement Highlight:</strong> Redesigned the user interface, resulting in a 25% increase in user engagement and a 20% decrease in bounce rate.
+                        </p>
+                    </div>
+                </div>
+
+            </div>
+        </div>
+    </div>
+</div>
+
+<div id="services"></div>
+
+<script src="about.js"></script>
+</body>
+</html>

@@ -1,0 +1,115 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Skills</title>
+    <link rel="stylesheet" href="style.css">
+
+    <style>
+
+
+        .image-container {
+            display: grid;
+            grid-template-columns: repeat(3, 1fr);
+            gap: 20px;
+            margin: 20px 0;
+        }
+
+        .image-container img {
+            width: 50%;
+            height: auto;
+            transition: transform 0.3s ease;
+        }
+        .container {
+    position: relative;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    flex-direction: row;
+    column-gap: 40px;
+}
+
+
+h1 {
+    position: absolute;
+    top: 0;
+    left: 50%;
+    transform: translateX(-50%);
+    margin-top: 0;
+    color: aliceblue;
+}
+        .image-container img:hover {
+            transform: scale(1.1);
+        }
+
+        p{
+            color: #9B3922;
+        }
+        h2{
+            color: #F2613F;
+        }
+
+    </style>
+</head>
+<body>
+    <nav>
+        <img src="Images/logo.jpg" alt="Logo" class="logo">
+        <ul>
+            <li><a href="index.html">Home</a></li>
+            <li><a href="about.html">About</a></li>
+            <li><a href="skills.html">Skills</a></li>
+            <li><a href="portfolio.html">Portfolio</a></li>
+            <li><a href="contact.html">Contact</a></li>
+        </ul>
+    </nav>
+    <div class="container">
+        <div class="image-container">
+
+            <img src="Images/html.jpg" alt="Image 4" onmouseover="enlargeImage(this)" onmouseout="normalImage(this)">
+            <img src="Images/css.jpg" alt="Image 5" onmouseover="enlargeImage(this)" onmouseout="normalImage(this)">
+            <a href="https://react.dev/"><img src="Images/react.jpg" alt="Image 6" onmouseover="enlargeImage(this)" onmouseout="normalImage(this)"></a>
+            <a href="https://www.python.org/"><img src="Images/py.jpg" alt="Image 7" onmouseover="enlargeImage(this)" onmouseout="normalImage(this)"></a>
+            <img src="Images/cpp.jpg" alt="Image 8" onmouseover="enlargeImage(this)" onmouseout="normalImage(this)">
+            <a href="https://www.java.com/en/"><img src="Images/java.jpg" alt="Image 9" onmouseover="enlargeImage(this)" onmouseout="normalImage(this)"></a>
+            <img src="Images/pr.jpg" alt="Image 1" onmouseover="enlargeImage(this)" onmouseout="normalImage(this)">
+            <img src="Images/ae.jpg" alt="Image 2" onmouseover="enlargeImage(this)" onmouseout="normalImage(this)">
+            <img src="Images/ai.jpg" alt="Image 3" onmouseover="enlargeImage(this)" onmouseout="normalImage(this)">
+        </div>
+
+        <h1>My Skills</h1>
+        <div class="skill">
+            <h2>Technical Proficiency</h2>
+            <p>
+                Proficient in various programming languages such as Python, C, and Cpp. Experienced in building ML models and data analysis tools. Familiar with modern development frameworks including Pytorch.
+            </p>
+        </div>
+        <div class="skill">
+            <h2>Managorial Proficiency</h2>
+            <p>
+                Skilled in project planning, execution, and coordination. Experienced in leading cross-functional teams to deliver projects on time and within budget.
+            </p>
+        </div>
+        <div class="skill">
+            <h2>Creative Proficiency</h2>
+            <p>
+                Proficient in Adobe Creative Suite, including PremierPro, Animate, and Audition. Experienced in creating videos and testimonials.
+            </p>
+        </div>
+        
+    </div>
+</div>
+
+
+    <script>
+        function enlargeImage(img) {
+            img.style.transform = "scale(1.5)";
+        }
+
+        function normalImage(img) {
+            img.style.transform = "scale(1)";
+        }
+    </script>
+</body>
+</html>

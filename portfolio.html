@@ -1,0 +1,141 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Portfolio</title>
+    <link rel="stylesheet" href="style.css">
+
+    <style>
+
+
+
+
+        .container, .container2 {
+            margin-top: 50px;
+            margin-bottom: 100px;
+        }
+
+        .content, .content2 {
+            padding: 20px;
+            box-sizing: border-box;
+            flex: 1;
+        }
+        .content {
+          padding: 20px;
+          box-sizing: border-box;
+          flex: 1; 
+        }
+        
+        .container {
+            width: 100%; 
+            height: auto;
+            max-height: 200px; 
+            background-color: #F2613F;
+            position: relative;
+            overflow: hidden;
+            border-radius: 10px;
+            border: 1px solid black;
+            display: flex; 
+            align-items: center; 
+            margin-bottom: 20px; 
+            box-shadow: 0 0 20px darkgrey; 
+            transition: box-shadow 0.3s ease;
+        }
+
+        .container2 {
+            width: 100%; 
+            height: auto;
+            max-height: 200px; 
+            background-color: #F2613F;
+            position: relative;
+            overflow: hidden;
+            border-radius: 10px;
+            border: 1px solid black; 
+            display: flex; 
+            align-items: center; 
+            margin-bottom: 20px; 
+            box-shadow: 0 0 20px darkgrey; 
+            transition: box-shadow 0.3s ease;
+            flex-direction: row-reverse; 
+        }
+
+        .image, .image2 {
+        max-width: 40%;
+        height: auto;
+        border: 2px solid black;
+        border-radius: 10px; 
+        }
+
+        .image img, .image2 img {
+        width: 100%;
+        height: auto;
+        display: block;
+        }
+
+
+      
+        .content2 {
+          padding: 20px;
+          box-sizing: border-box;
+          flex: 1; 
+        }
+      
+
+
+        h1{
+            color: #9B3922;
+        } 
+        h2{
+            color: #F2613F;
+        }
+        p{
+            color: #f0efef;
+        }
+
+    </style>
+</head>
+
+<body>
+    <nav>
+        <img src="Images/logo.jpg" alt="Logo" class="logo">
+        <ul>
+            <li><a href="index.html">Home</a></li>
+            <li><a href="about.html">About</a></li>
+            <li><a href="skills.html">Skills</a></li>
+            <li><a href="portfolio.html">Portfolio</a></li>
+            <li><a href="contact.html">Contact</a></li>
+        </ul>
+    </nav>
+
+    <h1>My Portfolio</h1>
+    <p>
+        Here are some of my top projects:
+    </p>
+
+    <div class="container" id="container1">
+      <div class="content">
+        <h2>Project 1</h2>
+        <p>                Robust face recognition is the task of performing recognition in an unconstrained environment, where there is variation of view-point, scale, pose, illumination and expression of the face images.        
+        </p>
+      </div>
+      <div class="image">
+        <a href="https://paperswithcode.com/task/robust-face-recognition"><img src="Images/Pr1.png" alt="Project 1 Screenshot"></a>
+      </div>
+    </div>
+    
+    <div class="container2" id="container2">
+      <div class="content2">
+        <h2>Project 2</h2>
+        <p>                Research on Camouflaged Human Target Detection Based on Deep Learning
+        </p>
+      </div>
+      <div class="image2" >
+        <a href="https://ieeexplore.ieee.org/abstract/document/8703820"><img src="Images/Pr2.webp" alt="Project 2 Screenshot"></a>
+      </div>
+    </div>
+
+    <script src="FPortfolio.js"></script>
+
+</body>
+</html>
